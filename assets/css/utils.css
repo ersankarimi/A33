@@ -1,0 +1,25 @@
+.font-regular {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500px;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    padding: .5em 1.215em;
+    border-radius: .75em;
+    cursor: pointer;
+}

@@ -1,0 +1,117 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 1em 3em;
+    }
+
+    .nav_items>ul>li>a {
+        padding-left: calc(2em - 5px);
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    header {
+        padding: calc(2em - 5px) 3em;
+    }
+
+    .nav_items>ul>li {
+        padding-left: calc(2em - 5px);
+    }
+
+    .nav_items>ul>li>a::after {
+        left: calc(2em - 5px);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header>h1 {
+        font-size: 2.25rem;
+        margin: 0 120px;
+    }
+
+    .hero_content img {
+        width: 70%;
+        height: 80%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header {
+        padding: 8px 2em;
+    }
+
+    header>h1 {
+        font-size: 2.25rem;
+    }
+
+    label[for=hamburger] {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        width: max-content;
+        margin: auto;
+    }
+
+    .nav_items ul {
+        display: flex;
+    }
+
+    .nav_items>ul>li {
+        padding: .2em;
+    }
+
+    .nav_items>ul>li>a {
+        font-size: 1.125rem;
+    }
+
+    .nav_items>ul>li>a::after {
+        left: 0;
+    }
+
+    .hero_content>h1 {
+        font-size: 4rem;
+    }
+
+    .hero_content>p {
+        font-size: 2.125rem;
+    }
+
+    .btn.hero {
+        font-size: 1.5rem;
+    }
+
+    .hero_content {
+        padding: 0 5em;
+    }
+
+    .pricing_content {
+        padding: 0 5em;
+    }
+
+    .pricing_content h1 {
+        font-size: calc(3rem - 5px);
+    }
+
+    .pricing_content p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .nav_items>ul>li>a {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav_items>ul>li>a {
+        font-size: 1.25rem;
+    }
+}
