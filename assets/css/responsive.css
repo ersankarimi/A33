@@ -54,6 +54,40 @@
     .service_card-body>p {
         padding: 0 0.5em;
     }
+
+    .contact_content>h1 {
+        font-size: 2.75rem;
+    }
+
+    .contact_content>p {
+        font-size: 1.25rem;
+    }
+
+    .footer_content-1, .footer_content-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .footer_content-2>p {
+        margin-bottom: 1em;
+    }
+
+    .right-side {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-side>p:not(:last-child) {
+        margin: .5em 0;
+    }
+
+    .footer_content-1-about {
+        text-align: center;
+        margin: 1em;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -91,9 +125,6 @@
     .hero_content>p {
         padding: 0 5em;
     }
-
-
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -184,6 +215,31 @@
         min-height: 485px;
         max-height: 485px;
         overflow: hidden;
+    }
+
+    .footer_content-1 {
+        padding: 2em;
+    }
+
+    .footer_content-1>h1 {
+        font-size: 2rem;
+    }
+
+    .footer_content-1-about>h2 {
+        font-size: 1rem;
+        margin-bottom: .45em;
+    }
+
+    .footer_content-1-about>p {
+        font-size: .8rem;
+        max-width: 220px;
+    }
+
+    .footer_content-1-social>img {
+        min-width: 40px;
+        min-height: 40px;
+        max-width: 40px;
+        max-height: 40px;
     }
 }
 

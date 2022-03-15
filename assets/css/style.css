@@ -485,4 +485,135 @@ section.service {
     padding: 0 1.5em;
 }
 
+section.contact {
+    margin-top: 10em;
+    padding: 3em;
+    padding-bottom: 5em;
+}
+
+.contact_content {
+    padding: 0 2em;
+}
+
+.contact_content>h1 {
+    font-size: 3rem;
+    margin: .25em;
+}
+
+/* .contact_content>p {
+    font-size: 1.5rem;
+    color: var(--dark-color-1);
+    margin: .25em;
+} */
+
+.contact {
+    background: url(./../img/contact-bg.png) no-repeat center;
+    background-size: cover;
+    object-fit: cover;
+    height: max-content;
+    color: var(--white-color);
+}
+
+.card_contact {
+    background-color: #00548C;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.card_contact>h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1.125em;
+}
+
+.card_contact-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: .5em;
+    margin: .75em 0;
+}
+
+.card_contact-item>img {
+    margin-right: 1em;
+}
+
+.card_contact-item>p {
+    max-width: 400px;
+    text-align: start;
+}
+
+.card_contact-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+}
+
+.card_contact-social>img {
+    margin: 0 .5em;
+    cursor: pointer;
+}
+
 /* End Section */
+
+/* footer */
+.footer_content-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+.footer_content-1>h1 {
+    font-size: 1.5rem;
+}
+
+.footer_content-1-about>h2 {
+    font-size: .8rem;
+    margin-bottom: .45em;
+}
+
+.footer_content-1-about>p {
+    font-size: .5rem;
+    max-width: 180px;
+    line-height: 1.3;
+}
+
+.footer_content-1-social {
+    display: flex;
+}
+
+.footer_content-1-social>img {
+    margin: 0 .5em;
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 25px;
+    max-height: 25px;
+    cursor: pointer;
+}
+
+.right-side,
+.footer_content-2 {
+    display: flex;
+    color: var(--white-color);
+}
+
+.right-side>p {
+    margin: 0 1em;
+}
+
+.footer_content-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 4em;
+    background-color: #4DAAE9;
+    font-size: 14px;
+}
+
+.footer_content-2>p,
+.right-side>p {
+    cursor: pointer;
+}
+
+/* end footer */
