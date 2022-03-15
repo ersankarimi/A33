@@ -29,6 +29,7 @@ header {
     background: var(--blue-color-1);
     padding: calc(2em - 5px) 3em;
     display: flex;
+    justify-content: space-between;
     position: fixed;
     align-items: center;
     z-index: 9999;
@@ -37,12 +38,13 @@ header {
 header>h1 {
     color: var(--white-color);
     font-size: 28px;
+    cursor: pointer;
 }
 
 label[for=hamburger] {
     /* background: #000; */
     position: absolute;
-    right: 25%;
+    right: 10%;
     width: max-content;
     height: max-content;
 }
@@ -91,7 +93,7 @@ nav {
     background: var(--blue-color-1);
     position: absolute;
     top: 100%;
-    left: -1000px;
+    left: -2000px;
     width: 100%;
     transition: 1s;
 }
@@ -241,12 +243,13 @@ section.hero {
     font-size: 1.125rem;
     margin-bottom: 1em;
     line-height: 125%;
+    padding: 0 .5em;
 }
 
 .hero_content img {
     position: relative;
     top: 2.5em;
-    width: 90%;
+    width: 80%;
     height: 90%;
 }
 
@@ -271,13 +274,13 @@ section.pricing {
 }
 
 .pricing_content>h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--blue-color-3);
     margin: .25em;
 }
 
 .pricing_content>p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--dark-color-1);
     margin: .25em;
 }
@@ -288,6 +291,7 @@ section.pricing {
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
+
 }
 
 .card_item-1 {
@@ -296,9 +300,9 @@ section.pricing {
     position: relative;
     width: 100%;
     max-width: 350px;
-    height: max-content;
+    /* height: max-content; */
+    border-radius: 1em;
     /* background-color: #000; */
-    margin: 1em;
     padding-bottom: 3em;
     overflow-x: hidden;
     box-shadow: var(--card-shadow-1);
@@ -319,8 +323,7 @@ section.pricing {
 
 .card_item-header-1>h1 {
     position: relative;
-    top: -63px;
-    bottom: 3rem;
+    top: -55px;
     font-size: 2rem;
     color: var(--white-color);
 }
@@ -347,9 +350,9 @@ h1 span.text-small {
 }
 
 .card_item-body>p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 1em;
-    letter-spacing: .1em;
+    letter-spacing: .01em;
     line-height: 1.125em;
 }
 
@@ -360,6 +363,126 @@ h1 span.text-small {
     border: transparent;
     color: var(--white-color);
     background-image: linear-gradient(var(--linier-color-3));
+}
+
+.card_item-2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    /* height: max-content; */
+    background-image: linear-gradient(var(--linier-color-2));
+    border-radius: 1em;
+    /* background-color: #000; */
+    margin: 1em;
+    padding-bottom: 3em;
+    overflow: hidden;
+    box-shadow: var(--card-shadow-1);
+}
+
+.half-circle {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    margin: auto;
+    margin-left: -.1.5em;
+    margin-top: -12em;
+    background-color: var(--white-color);
+    border-radius: 45%;
+}
+
+.card_item-header-2>h1 {
+    position: relative;
+    top: -73px;
+    font-size: 2rem;
+    background: -webkit-linear-gradient(var(--linier-color-5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card_item-body.dua {
+    color: var(--white-color);
+}
+
+.btn.card-2 {
+    font-size: 1.25rem;
+    width: 170px;
+    margin: auto;
+    border: transparent;
+    background-color: var(--white-color);
+    color: var(--blue-color-1);
+}
+
+
+
+/* .service_content>h1 {
+    font-size: 3rem;
+    color: var(--blue-color-3);
+    margin: .25em;
+}
+
+.service_content>p {
+    font-size: 1.5rem;
+    color: var(--dark-color-1);
+    margin: .25em;
+} */
+.service_content>h1 {
+    font-size: 3rem;
+    color: var(--blue-color-3);
+    margin: .25em;
+}
+
+.service_content>p {
+    font-size: 1.5rem;
+    color: var(--dark-color-1);
+    margin: .25em;
+}
+
+section.service {
+    padding-top: 10em;
+}
+
+.service_content {
+    padding: 0 2em;
+}
+
+.service_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 350px;
+    height: max-content;
+    margin: 1em 0;
+    padding: 2em;
+    box-shadow: var(--card-shadow-1);
+}
+
+.service_card-header {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(var(--linier-color-3));
+}
+
+.service_card-body>h1 {
+    color: var(--blue-color-2);
+    font-size: 2rem;
+    margin: .5em 0 .35em 0;
+}
+
+.service_card-body>p {
+    font-size: 1rem;
+    color: var(--dark-color-1);
+    padding: 0 1.5em;
 }
 
 /* End Section */

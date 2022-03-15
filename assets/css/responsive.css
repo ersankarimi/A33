@@ -8,12 +8,58 @@
         padding-left: calc(2em - 5px);
     }
 
+    .pricing_content>h1 {
+        font-size: 2.75rem;
+    }
+
+    .service_content>h1 {
+        font-size: 2.75rem;
+    }
+
+    .pricing_content>p {
+        font-size: 1.25rem;
+    }
+
+    .service_content>p {
+        font-size: 1.25rem;
+    }
+
+    .card_item-body>h1 {
+        font-size: 2.5rem;
+    }
+
+    h1 span.text-small {
+        font-size: 1.5rem;
+    }
+
+    .card_item-header-1>h1 {
+        /* top: -63px;
+        bottom: 3rem; */
+        font-size: 1.8rem;
+    }
+
+    .card_item-1,
+    .card_item-2 {
+        min-height: 385px;
+    }
+
+    .service_content>h1 {
+        font-size: 2.75rem;
+    }
+
+    .service_content>p {
+        font-size: 1.25rem;
+    }
+
+    .service_card-body>p {
+        padding: 0 0.5em;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     header {
-        padding: calc(2em - 5px) 3em;
+        padding: 1em 3em;
     }
 
     .nav_items>ul>li {
@@ -23,25 +69,37 @@
     .nav_items>ul>li>a::after {
         left: calc(2em - 5px);
     }
+
+    .card_item-1,
+    .card_item-2 {
+        min-height: 400px;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     header>h1 {
-        font-size: 2.25rem;
-        margin: 0 120px;
+        font-size: 2.125rem;
     }
 
     .hero_content img {
-        width: 70%;
+        width: 60%;
         height: 80%;
     }
+
+    .hero_content>p {
+        padding: 0 5em;
+    }
+
+
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     header {
-        padding: 8px 2em;
+        padding: 8px 5em;
     }
 
     header>h1 {
@@ -55,7 +113,7 @@
     nav {
         position: static;
         width: max-content;
-        margin: auto;
+        /* margin: auto; */
     }
 
     .nav_items ul {
@@ -75,11 +133,12 @@
     }
 
     .hero_content>h1 {
-        font-size: 4rem;
+        font-size: 2.75rem;
     }
 
     .hero_content>p {
-        font-size: 2.125rem;
+        font-size: 1.5rem;
+        padding: 0 5em;
     }
 
     .btn.hero {
@@ -94,12 +153,37 @@
         padding: 0 5em;
     }
 
-    .pricing_content h1 {
-        font-size: calc(3rem - 5px);
+    .pricing_content>h1 {
+        font-size: 3rem;
     }
 
-    .pricing_content p {
+    .service_content>h1 {
+        font-size: 3rem;
+    }
+
+    .pricing_content>p {
         font-size: 1.5rem;
+    }
+
+    .service_content>p {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .service_card {
+        margin: 1em;
+    }
+
+
+    .card_item-1,
+    .card_item-2 {
+        min-height: 485px;
+        max-height: 485px;
+        overflow: hidden;
     }
 }
 
@@ -113,5 +197,14 @@
 @media only screen and (min-width: 1200px) {
     .nav_items>ul>li>a {
         font-size: 1.25rem;
+    }
+
+    .hero_content>p {
+        padding: 0 10em;
+    }
+
+    .card_item-1,
+    .card_item-2 {
+        min-height: 485px;
     }
 }
