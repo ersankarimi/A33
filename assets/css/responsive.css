@@ -63,7 +63,8 @@
         font-size: 1.25rem;
     }
 
-    .footer_content-1, .footer_content-2 {
+    .footer_content-1,
+    .footer_content-2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -124,6 +125,26 @@
 
     .hero_content>p {
         padding: 0 5em;
+    }
+
+    .pricing_content>h1 {
+        font-size: 2.5rem;
+    }
+
+    .pricing_content>p {
+        font-size: 1.25rem;
+    }
+
+    .service_content>h1 {
+        font-size: 2.5rem;
+    }
+
+    .service_content>p {
+        font-size: 1.25rem;
+    }
+
+    .contact_content>h1 {
+        font-size: 2.5rem;
     }
 }
 
@@ -240,6 +261,26 @@
         min-height: 40px;
         max-width: 40px;
         max-height: 40px;
+    }
+
+    .pricing_content>h1 {
+        font-size: 3rem;
+    }
+
+    .pricing_content>p {
+        font-size: 1.5rem;
+    }
+
+    .service_content>h1 {
+        font-size: 3rem;
+    }
+
+    .service_content>p {
+        font-size: 1.5rem;
+    }
+
+    .contact_content>h1 {
+        font-size: 3rem;
     }
 }
 
