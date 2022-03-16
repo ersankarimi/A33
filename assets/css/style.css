@@ -362,11 +362,15 @@ section.hero {
     background-color: #fff;
     border: transparent;
     margin-bottom: 1em;
+}
+
+.btn.hero>a{
+    text-decoration:none;
     color: #0099FF;
 }
 
 .btn.hero:hover {
-    background-color: rgba(253, 251, 251, .9);
+    background-color: rgba(253, 251, 251, .8);
 }
 
 section.pricing {
