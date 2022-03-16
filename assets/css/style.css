@@ -48,7 +48,11 @@ label[for=hamburger] {
     /* background: #000; */
     position: absolute;
     right: 10%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
 }
 
@@ -68,26 +72,32 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked~* .hamburger_line:nth-child(1) {
+    -webkit-animation: line-1 0.5s ease-in forwards;
     animation: line-1 0.5s ease-in forwards;
 }
 
 input[type=checkbox]:not(:checked)~* .hamburger_line:nth-child(1) {
+    -webkit-animation: line-1-back 0.5s ease-in forwards;
     animation: line-1-back 0.5s ease-in forwards;
 }
 
 input[type=checkbox]:checked~* .hamburger_line:nth-child(2) {
+    -webkit-animation: line-2 0.5s ease-in forwards;
     animation: line-2 0.5s ease-in forwards;
 }
 
 input[type=checkbox]:not(:checked)~* .hamburger_line:nth-child(2) {
+    -webkit-animation: line-2-back 0.5s ease-in forwards;
     animation: line-2-back 0.5s ease-in forwards;
 }
 
 input[type=checkbox]:checked~* .hamburger_line:nth-child(3) {
+    -webkit-animation: line-3 0.5s ease-in forwards;
     animation: line-3 0.5s ease-in forwards;
 }
 
 input[type=checkbox]:not(:checked)~* .hamburger_line:nth-child(3) {
+    -webkit-animation: line-3-back 0.5s ease-in forwards;
     animation: line-3-back 0.5s ease-in forwards;
 }
 
@@ -136,6 +146,22 @@ input[type=checkbox]:checked~nav {
 }
 
 
+@-webkit-keyframes line-1 {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    50% {
+        transform: translate(0, 12px) rotate(0);
+    }
+
+    100% {
+        transform-origin: center;
+        transform: translate(0, 12px) rotate(45deg);
+    }
+}
+
+
 @keyframes line-1 {
     0% {
         transform: translate(0, 0) rotate(0);
@@ -148,6 +174,21 @@ input[type=checkbox]:checked~nav {
     100% {
         transform-origin: center;
         transform: translate(0, 12px) rotate(45deg);
+    }
+}
+
+@-webkit-keyframes line-1-back {
+    0% {
+        transform-origin: center;
+        transform: translate(0, 12px) rotate(45deg);
+    }
+
+    50% {
+        transform: translate(0, 12px) rotate(0);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0);
     }
 }
 
@@ -166,6 +207,16 @@ input[type=checkbox]:checked~nav {
     }
 }
 
+@-webkit-keyframes line-2 {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
 @keyframes line-2 {
     from {
         transform: scale(1);
@@ -176,6 +227,16 @@ input[type=checkbox]:checked~nav {
     }
 }
 
+@-webkit-keyframes line-2-back {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 @keyframes line-2-back {
     from {
         transform: scale(0);
@@ -183,6 +244,21 @@ input[type=checkbox]:checked~nav {
 
     to {
         transform: scale(1);
+    }
+}
+
+@-webkit-keyframes line-3 {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    50% {
+        transform: translate(0, -12px) rotate(0);
+    }
+
+    100% {
+        transform-origin: center;
+        transform: translate(0, -12px) rotate(135deg);
     }
 }
 
@@ -201,7 +277,7 @@ input[type=checkbox]:checked~nav {
     }
 }
 
-@keyframes line-3-back {
+@-webkit-keyframes line-3-back {
     0% {
         transform-origin: center;
         transform: translate(0, -12px) rotate(135deg);
@@ -216,12 +292,33 @@ input[type=checkbox]:checked~nav {
     }
 }
 
+@keyframes line-3-back {
+    0% {
+        transform-origin: center;
+        transform: translate(0, -12px) rotate(135deg);
+    }
+
+    50% {
+        transform: translate(0, -12px) rotate(0);
+        -webkit-transform: translate(0, -12px) rotate(0);
+        -moz-transform: translate(0, -12px) rotate(0);
+        -ms-transform: translate(0, -12px) rotate(0);
+        -o-transform: translate(0, -12px) rotate(0);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
 /* End Header */
 
 /* Start Section */
 section.hero {
     display: flex;
     flex-direction: column;
+    min-height: calc(-webkit-max-content + 100px);
+    min-height: calc(-moz-max-content + 100px);
     min-height: calc(max-content + 100px);
     min-width: 100%;
     padding-top: 10rem;
@@ -230,6 +327,7 @@ section.hero {
     text-align: center;
     background: url(./../img/bg-image-hero.png) no-repeat center;
     background-size: cover;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -315,6 +413,7 @@ section.pricing {
 .card_item-1:hover {
     transform: scale(1.015);
 }
+
 
 .card_item-1:hover button {
     background-image: linear-gradient(to top, var(--linier-color-3));
@@ -545,7 +644,10 @@ section.contact {
 .contact {
     background: url(./../img/contact-bg.png) no-repeat center;
     background-size: cover;
+    -o-object-fit: cover;
     object-fit: cover;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     color: var(--white-color);
 }
